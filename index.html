@@ -37,12 +37,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12  col-sm-10">
+                <div class="col-12  col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12  col-sm align-self-center">
+                <div class="col-12  col-sm-3 align-self-center">
                     <img src="img\logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#reserve" class="btn btn-sm"><button type="Reserve" class="btn btn-warning">Reserve a Table</button></a>
                 </div>
             </div>
         </div>
@@ -75,8 +78,16 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col order-sm-first col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                      <h2>
+                        Weekend Grand Buffet
+                        <span class="badge badge-danger">New</span>
+                      </h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>  
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Weekend Grand Buffet">
+                </div>
             </div>
         </div>
 
@@ -97,6 +108,64 @@
                     </div>
                 </div>                
             </div>
+        </div>
+    </div>
+
+    <div clss="container" id="reserve">
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-4">Number of Guests</dt>
+                            <dd class="col-8">
+                                <div class="form-check-inline">
+                                    <input type="radio" name="opt1" index="opt1" class="form-check-input" placeholder="1">
+                                    <label class="form-check-label" for="opt1">1</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" name="opt2" index="opt1" class="form-check-input" placeholder="2">
+                                    <label class="form-check-label" for="opt1">2</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" name="opt3" index="opt1" class="form-check-input" placeholder="3">
+                                    <label class="form-check-label" for="opt1">3</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" name="opt4" index="opt1" class="form-check-input" placeholder="4">
+                                    <label class="form-check-label" for="opt1">4</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" name="opt5" index="opt1" class="form-check-input" placeholder="5">
+                                    <label class="form-check-label" for="opt1">5</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" name="opt6" index="opt1" class="form-check-input" placeholder="6">
+                                    <label class="form-check-label" for="opt1">6</label>
+                                </div>
+                            </dd>
+                            <dt class="col-4">Date and Time</dt>
+                            <dd class="col-8">
+                                <div class="form-group row">
+                                    <div class="col-12 col-sm-6">
+                                        <input type="Date" name="Date" id="Date" class="form-control" placeholder="Date">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="Time" name="Time" id="Time" class="form-control" placeholder="Time">
+                                    </div>
+                                </div>
+                            </dd>    
+                        </dl>
+                        <div class="form-group row">
+                            <div class="offset-sm-4 col-md-10">
+                                <button type="Reserve" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
