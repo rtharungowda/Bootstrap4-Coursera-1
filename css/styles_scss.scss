@@ -3,6 +3,7 @@ $bg-dark: #512DA8;
 $bg-light: #9575CD;
 $bg-pale: #D1C4E9;
 $carousel-item-height: 300px;
+$text-color: #fffaf0;
 
 /*mixins*/
 @mixin zero-margin($pad-up-down, $pad-right-left){
@@ -74,4 +75,21 @@ body{
 	position: absolute;
 	bottom: 0px;
 	z-index: 1;
+}
+
+.modal-header{
+	background-color: $bg-dark;
+	color:$text-color;
+
+	.close{
+		color:$text-color;
+	}
+}
+
+.modal-body{
+	background-color: $bg-pale;
+
+	.card {
+		background-color: $bg-pale;
+	}
 }
