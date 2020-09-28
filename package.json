@@ -9,15 +9,18 @@
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-    "watch:all" : "parallelshell 'npm run watch:scss' 'live-server'"
+    "watch:all": "parallelshell 'npm run watch:scss' 'live-server'",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
   },
-  "author": "",
+  "author": "rtg",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
-    "parallelshell": "^3.0.2"
+    "parallelshell": "^3.0.2",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
